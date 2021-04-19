@@ -8,6 +8,7 @@ import Cookies from 'js-cookie';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
 import '../styles/tailwind.css';
+global.fetch = require('node-fetch');
 
 import {Provider as ReduxProvider} from 'react-redux';
 import store from '../redux/store';

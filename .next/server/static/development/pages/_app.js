@@ -458,6 +458,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+global.fetch = __webpack_require__(/*! node-fetch */ "node-fetch");
 
 
 const client = new apollo_boost__WEBPACK_IMPORTED_MODULE_8___default.a({
@@ -755,6 +756,17 @@ module.exports = require("js-cookie");
 /***/ (function(module, exports) {
 
 module.exports = require("next/head");
+
+/***/ }),
+
+/***/ "node-fetch":
+/*!*****************************!*\
+  !*** external "node-fetch" ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("node-fetch");
 
 /***/ }),
 
