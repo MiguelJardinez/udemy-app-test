@@ -26,7 +26,7 @@ function handler() {
   console.log('Funcionando el script');
   console.log(Shopify)
 
-  fetch(`https://cors-anywhere.herokuapp.com/https://35dce94a9640.ngrok.io/api/conditions?shop=${shop}`)
+  fetch(`https://cors-anywhere.herokuapp.com/https://59be870fec72.ngrok.io/api/conditions?shop=${shop}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data.data);
@@ -41,6 +41,7 @@ function handler() {
         console.log('Tenemos informacion del checkout');
         const address = Shopify.checkout.billing_address.address1 !== Shopify.checkout.shipping_address.address1 && settings?.settings?.address;
         const ammount = Number(Shopify.checkout.subtotal_price) >= settings.limit_ammount && settings?.settings?.ammount;
+        const customerName = Shopify?.checkout?.billing_address?.first_name;
 
         if (address || ammount) {
       
@@ -59,7 +60,7 @@ function handler() {
             `<div>
               <div style="display: flex; flex-direction: column">
                   <h1 style="text-align: center; font-size: 22px; margin-bottom: 24px;">
-                    Hi Customer
+                    Hi ${customerName}
                   </h1>
                   <p style="text-align: center; font-size: 22px; margin-bottom: 24px">
                     ID Verification is required to complete this purchase.
@@ -92,6 +93,8 @@ function handler() {
           const handlePostInfo = async () => {
             try {
               console.log('Mandando la información a globalID', shop, route);
+              window.localStorage.setItem('link', `${shop}/${route}`);
+              console.log(`${shop}/${route}`);
               window.location.replace("https://miguels-store-global.myshopify.com/apps/global-id");
             } catch (error) {
               console.log(error);
