@@ -1,10 +1,12 @@
 import React from 'react';
 import {useDispatch, useSelector} from 'react-redux';
+import {Dispatch} from 'redux';
+import { ITChangeClientId, ITChangeShopName, userDispatch } from '../../redux/@types/settingsActionTypes';
 import {CHANGE_CLIENT_GLOBALID} from '../../redux/types';
 
 const ConnectGlobalId = () => {
   const userinfo = useSelector((state: any) => state.user);
-  const dispatch = useDispatch();
+  const dispatch: Dispatch<ITChangeClientId> = useDispatch();
 
   const handlechangeClientGlobalID = (e: React.ChangeEvent<HTMLInputElement>) => {
     dispatch({

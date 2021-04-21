@@ -445,7 +445,7 @@ var _shopify_polaris_locales_en_json__WEBPACK_IMPORTED_MODULE_6___namespace = /*
 /* harmony import */ var _styles_tailwind_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_styles_tailwind_css__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-redux */ "react-redux");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _redux_store__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../redux/store */ "./redux/store.js");
+/* harmony import */ var _redux_store__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../redux/store */ "./redux/store.ts");
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -503,9 +503,9 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
 
 /***/ }),
 
-/***/ "./redux/reducer/index.js":
+/***/ "./redux/reducer/index.ts":
 /*!********************************!*\
-  !*** ./redux/reducer/index.js ***!
+  !*** ./redux/reducer/index.ts ***!
   \********************************/
 /*! exports provided: rootReducer */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -515,7 +515,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rootReducer", function() { return rootReducer; });
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "redux");
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _user_userReducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./user/userReducer */ "./redux/reducer/user/userReducer.js");
+/* harmony import */ var _user_userReducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./user/userReducer */ "./redux/reducer/user/userReducer.ts");
 
 
 const rootReducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
@@ -524,16 +524,16 @@ const rootReducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"]
 
 /***/ }),
 
-/***/ "./redux/reducer/user/userReducer.js":
+/***/ "./redux/reducer/user/userReducer.ts":
 /*!*******************************************!*\
-  !*** ./redux/reducer/user/userReducer.js ***!
+  !*** ./redux/reducer/user/userReducer.ts ***!
   \*******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../types */ "./redux/types/index.js");
+/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../types */ "./redux/types/index.ts");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -547,11 +547,8 @@ const initialState = {
   loading: false,
   isChanged: false
 };
-/* harmony default export */ __webpack_exports__["default"] = ((state = initialState, {
-  type,
-  payload
-}) => {
-  switch (type) {
+/* harmony default export */ __webpack_exports__["default"] = ((state = initialState, action) => {
+  switch (action.type) {
     case _types__WEBPACK_IMPORTED_MODULE_0__["SAVE_GLOBAL_STATE"]:
     case _types__WEBPACK_IMPORTED_MODULE_0__["CHANGE_CONDITIONS"]:
     case _types__WEBPACK_IMPORTED_MODULE_0__["GET_USER_INFO"]:
@@ -562,7 +559,7 @@ const initialState = {
 
     case _types__WEBPACK_IMPORTED_MODULE_0__["GET_USER_INFO_SUCCESS"]:
       return _objectSpread({}, state, {
-        user: payload,
+        user: action.payload,
         loading: false,
         error: false
       });
@@ -570,21 +567,21 @@ const initialState = {
     case _types__WEBPACK_IMPORTED_MODULE_0__["CHANGE_CONDITIONS_SUCCESS"]:
       return _objectSpread({}, state, {
         user: _objectSpread({}, state.user, {
-          settings: payload
+          settings: action.payload
         }),
         isChanged: true
       });
 
     case _types__WEBPACK_IMPORTED_MODULE_0__["SAVE_GLOBAL_STATE_SUCCESS"]:
       return _objectSpread({}, state, {
-        user: payload,
+        user: action.payload,
         isChanged: false
       });
 
     case _types__WEBPACK_IMPORTED_MODULE_0__["CHANGE_SHOP_NAME"]:
       return _objectSpread({}, state, {
         user: _objectSpread({}, state.user, {
-          shop_name: payload
+          shop_name: action.payload
         }),
         isChanged: true
       });
@@ -592,7 +589,7 @@ const initialState = {
     case _types__WEBPACK_IMPORTED_MODULE_0__["CHANGE_AMMOUNT"]:
       return _objectSpread({}, state, {
         user: _objectSpread({}, state.user, {
-          limit_ammount: payload
+          limit_ammount: action.payload
         }),
         isChanged: true
       });
@@ -600,7 +597,7 @@ const initialState = {
     case _types__WEBPACK_IMPORTED_MODULE_0__["CHANGE_CLIENT_GLOBALID"]:
       return _objectSpread({}, state, {
         user: _objectSpread({}, state.user, {
-          global_client_id: payload
+          global_client_id: action.payload
         }),
         isChanged: true
       });
@@ -620,9 +617,9 @@ const initialState = {
 
 /***/ }),
 
-/***/ "./redux/store.js":
+/***/ "./redux/store.ts":
 /*!************************!*\
-  !*** ./redux/store.js ***!
+  !*** ./redux/store.ts ***!
   \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -635,19 +632,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(redux_thunk__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux-devtools-extension */ "redux-devtools-extension");
 /* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _reducer___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./reducer/ */ "./redux/reducer/index.js");
+/* harmony import */ var _reducer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./reducer */ "./redux/reducer/index.ts");
 
 
 
 
-const store = Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(_reducer___WEBPACK_IMPORTED_MODULE_3__["rootReducer"], Object(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2__["composeWithDevTools"])(Object(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"])(redux_thunk__WEBPACK_IMPORTED_MODULE_1___default.a)));
+const store = Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(_reducer__WEBPACK_IMPORTED_MODULE_3__["rootReducer"], Object(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_2__["composeWithDevTools"])(Object(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"])(redux_thunk__WEBPACK_IMPORTED_MODULE_1___default.a)));
 /* harmony default export */ __webpack_exports__["default"] = (store);
 
 /***/ }),
 
-/***/ "./redux/types/index.js":
+/***/ "./redux/types/index.ts":
 /*!******************************!*\
-  !*** ./redux/types/index.js ***!
+  !*** ./redux/types/index.ts ***!
   \******************************/
 /*! exports provided: GET_USER_INFO, GET_USER_INFO_SUCCESS, GET_USER_INFO_FAILURE, CHANGE_CONDITIONS, CHANGE_CONDITIONS_SUCCESS, CHANGE_CONDITIONS_FAILURE, SAVE_GLOBAL_STATE, SAVE_GLOBAL_STATE_SUCCESS, SAVE_GLOBAL_STATE_FAILURE, CHANGE_SHOP_NAME, CHANGE_AMMOUNT, CHANGE_CLIENT_GLOBALID */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {

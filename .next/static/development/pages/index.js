@@ -272,8 +272,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_ios_switch__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-ios-switch */ "./node_modules/react-ios-switch/lib/index.js");
 /* harmony import */ var react_ios_switch__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_ios_switch__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _redux_actions_conditionals_changeConditionals__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../redux/actions/conditionals/changeConditionals */ "./redux/actions/conditionals/changeConditionals.js");
-/* harmony import */ var _redux_types__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../redux/types */ "./redux/types/index.js");
+/* harmony import */ var _redux_actions_conditionals_changeConditionals__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../redux/actions/conditionals/changeConditionals */ "./redux/actions/conditionals/changeConditionals.ts");
+/* harmony import */ var _redux_types__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../redux/types */ "./redux/types/index.ts");
 
 
 
@@ -365,7 +365,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _redux_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../redux/types */ "./redux/types/index.js");
+/* harmony import */ var _redux_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../redux/types */ "./redux/types/index.ts");
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -425,7 +425,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _redux_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../redux/types */ "./redux/types/index.js");
+/* harmony import */ var _redux_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../redux/types */ "./redux/types/index.ts");
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -555,7 +555,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _redux_actions_save_changes_SaveChangeAction__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../redux/actions/save-changes/SaveChangeAction */ "./redux/actions/save-changes/SaveChangeAction.js");
+/* harmony import */ var _redux_actions_save_changes_SaveChangeAction__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../redux/actions/save-changes/SaveChangeAction */ "./redux/actions/save-changes/SaveChangeAction.ts");
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -21996,7 +21996,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layout_MainLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Layout/MainLayout */ "./Layout/MainLayout.tsx");
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components */ "./components/index.ts");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _redux_actions_user_userActions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../redux/actions/user/userActions */ "./redux/actions/user/userActions.js");
+/* harmony import */ var _redux_actions_user_userActions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../redux/actions/user/userActions */ "./redux/actions/user/userActions.ts");
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -22034,9 +22034,9 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ "./redux/actions/conditionals/changeConditionals.js":
+/***/ "./redux/actions/conditionals/changeConditionals.ts":
 /*!**********************************************************!*\
-  !*** ./redux/actions/conditionals/changeConditionals.js ***!
+  !*** ./redux/actions/conditionals/changeConditionals.ts ***!
   \**********************************************************/
 /*! exports provided: changeConditionsAction */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -22048,7 +22048,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../types */ "./redux/types/index.js");
+/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../types */ "./redux/types/index.ts");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
 
@@ -22061,14 +22061,19 @@ var changeConditionsAction = function changeConditionsAction(data) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            dispatch(changeConditionals());
+            dispatch({
+              type: _types__WEBPACK_IMPORTED_MODULE_2__["CHANGE_CONDITIONS"]
+            });
             _context.prev = 1;
             console.log('Cambiando la data', data);
             _context.next = 5;
             return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.awrap(axios__WEBPACK_IMPORTED_MODULE_3___default.a.post('/api/conditions', data));
 
           case 5:
-            dispatch(changeConditionalsSuccess(data));
+            dispatch({
+              type: _types__WEBPACK_IMPORTED_MODULE_2__["CHANGE_CONDITIONS_SUCCESS"],
+              payload: data
+            });
             _context.next = 13;
             break;
 
@@ -22077,7 +22082,9 @@ var changeConditionsAction = function changeConditionsAction(data) {
             _context.t0 = _context["catch"](1);
             console.log(_context.t0);
             console.log('Hubo un error en la accion de los condicionales');
-            dispatch(changeConditionalsError());
+            dispatch({
+              type: _types__WEBPACK_IMPORTED_MODULE_2__["CHANGE_CONDITIONS_FAILURE"]
+            });
 
           case 13:
           case "end":
@@ -22109,9 +22116,9 @@ var changeConditionalsError = function changeConditionalsError() {
 
 /***/ }),
 
-/***/ "./redux/actions/save-changes/SaveChangeAction.js":
+/***/ "./redux/actions/save-changes/SaveChangeAction.ts":
 /*!********************************************************!*\
-  !*** ./redux/actions/save-changes/SaveChangeAction.js ***!
+  !*** ./redux/actions/save-changes/SaveChangeAction.ts ***!
   \********************************************************/
 /*! exports provided: saveChangeActions */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -22123,7 +22130,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../types */ "./redux/types/index.js");
+/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../types */ "./redux/types/index.ts");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
 
@@ -22137,7 +22144,9 @@ var saveChangeActions = function saveChangeActions() {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            dispatch(saveChange());
+            dispatch({
+              type: _types__WEBPACK_IMPORTED_MODULE_2__["SAVE_GLOBAL_STATE"]
+            });
             _context.prev = 1;
             user_settings = getState().user.user;
             console.log('configuraciones del usuario', user_settings);
@@ -22145,7 +22154,10 @@ var saveChangeActions = function saveChangeActions() {
             return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.awrap(axios__WEBPACK_IMPORTED_MODULE_3___default.a.post('/api/user-settings', user_settings));
 
           case 6:
-            dispatch(saveChangeSuccess(user_settings));
+            dispatch({
+              type: _types__WEBPACK_IMPORTED_MODULE_2__["SAVE_GLOBAL_STATE_SUCCESS"],
+              payload: user_settings
+            });
             _context.next = 14;
             break;
 
@@ -22154,7 +22166,9 @@ var saveChangeActions = function saveChangeActions() {
             _context.t0 = _context["catch"](1);
             console.log(_context.t0);
             console.log('Hubo un error en la accion de Salvar estado');
-            dispatch(saveChangeFailure());
+            dispatch({
+              type: _types__WEBPACK_IMPORTED_MODULE_2__["SAVE_GLOBAL_STATE_FAILURE"]
+            });
 
           case 14:
           case "end":
@@ -22165,30 +22179,11 @@ var saveChangeActions = function saveChangeActions() {
   };
 };
 
-var saveChange = function saveChange() {
-  return {
-    type: _types__WEBPACK_IMPORTED_MODULE_2__["SAVE_GLOBAL_STATE"]
-  };
-};
-
-var saveChangeSuccess = function saveChangeSuccess(data) {
-  return {
-    type: _types__WEBPACK_IMPORTED_MODULE_2__["SAVE_GLOBAL_STATE_SUCCESS"],
-    payload: data
-  };
-};
-
-var saveChangeFailure = function saveChangeFailure() {
-  return {
-    type: _types__WEBPACK_IMPORTED_MODULE_2__["SAVE_GLOBAL_STATE_FAILURE"]
-  };
-};
-
 /***/ }),
 
-/***/ "./redux/actions/user/userActions.js":
+/***/ "./redux/actions/user/userActions.ts":
 /*!*******************************************!*\
-  !*** ./redux/actions/user/userActions.js ***!
+  !*** ./redux/actions/user/userActions.ts ***!
   \*******************************************/
 /*! exports provided: getUSerInfoAction */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -22200,7 +22195,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _types___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../types/ */ "./redux/types/index.js");
+/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../types */ "./redux/types/index.ts");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
 
@@ -22215,13 +22210,18 @@ var getUSerInfoAction = function getUSerInfoAction() {
         switch (_context.prev = _context.next) {
           case 0:
             _context.prev = 0;
-            dispatch(getUserInfo());
+            dispatch({
+              type: _types__WEBPACK_IMPORTED_MODULE_2__["GET_USER_INFO"]
+            });
             _context.next = 4;
             return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.awrap(axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('/api/conditions'));
 
           case 4:
             result = _context.sent;
-            dispatch(getUserInfoSuccess(result.data.data));
+            dispatch({
+              type: _types__WEBPACK_IMPORTED_MODULE_2__["GET_USER_INFO_SUCCESS"],
+              payload: result.data.data
+            });
             _context.next = 13;
             break;
 
@@ -22230,7 +22230,9 @@ var getUSerInfoAction = function getUSerInfoAction() {
             _context.t0 = _context["catch"](0);
             console.log(_context.t0);
             console.log('Hubo un error en la accion de obtener usuario');
-            dispatch(getUserInfoFailure());
+            dispatch({
+              type: _types__WEBPACK_IMPORTED_MODULE_2__["GET_USER_INFO_FAILURE"]
+            });
 
           case 13:
           case "end":
@@ -22241,30 +22243,11 @@ var getUSerInfoAction = function getUSerInfoAction() {
   };
 };
 
-var getUserInfo = function getUserInfo() {
-  return {
-    type: _types___WEBPACK_IMPORTED_MODULE_2__["GET_USER_INFO"]
-  };
-};
-
-var getUserInfoSuccess = function getUserInfoSuccess(data) {
-  return {
-    type: _types___WEBPACK_IMPORTED_MODULE_2__["GET_USER_INFO_SUCCESS"],
-    payload: data
-  };
-};
-
-var getUserInfoFailure = function getUserInfoFailure() {
-  return {
-    type: _types___WEBPACK_IMPORTED_MODULE_2__["GET_USER_INFO_FAILURE"]
-  };
-};
-
 /***/ }),
 
-/***/ "./redux/types/index.js":
+/***/ "./redux/types/index.ts":
 /*!******************************!*\
-  !*** ./redux/types/index.js ***!
+  !*** ./redux/types/index.ts ***!
   \******************************/
 /*! exports provided: GET_USER_INFO, GET_USER_INFO_SUCCESS, GET_USER_INFO_FAILURE, CHANGE_CONDITIONS, CHANGE_CONDITIONS_SUCCESS, CHANGE_CONDITIONS_FAILURE, SAVE_GLOBAL_STATE, SAVE_GLOBAL_STATE_SUCCESS, SAVE_GLOBAL_STATE_FAILURE, CHANGE_SHOP_NAME, CHANGE_AMMOUNT, CHANGE_CLIENT_GLOBALID */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -22304,7 +22287,7 @@ var CHANGE_CLIENT_GLOBALID = 'CHANGE_CLIENT_GLOBALID';
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!*********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fmiguel_jardinez%2FDesktop%2Fshopify-script-tag-app-master%2Fpages%2Findex.tsx ***!
   \*********************************************************************************************************************************************************/
@@ -22327,5 +22310,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

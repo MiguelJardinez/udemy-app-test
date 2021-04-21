@@ -1,10 +1,12 @@
 import React, {useRef} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import {CHANGE_SHOP_NAME} from '../../redux/types';
+import {Dispatch} from 'redux';
+import {ITChangeShopName} from '../../redux/@types/settingsActionTypes';
 
 const ShopInfo = () => {
   const _inputFile = useRef(null);
-  const dispatch = useDispatch();
+  const dispatch: Dispatch<ITChangeShopName> = useDispatch();
   const userInfo = useSelector((state: any) => state.user);
 
   const handleSubmitLogo = () => {

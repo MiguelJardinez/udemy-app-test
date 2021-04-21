@@ -25,5 +25,5 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ]
+, "pages/_app.js", "redux/types/index.js", "redux/store.js", "redux/reducer/index.js"  ]
 }

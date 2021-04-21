@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -355,8 +355,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_ios_switch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_ios_switch__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "react-redux");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _redux_actions_conditionals_changeConditionals__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../redux/actions/conditionals/changeConditionals */ "./redux/actions/conditionals/changeConditionals.js");
-/* harmony import */ var _redux_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../redux/types */ "./redux/types/index.js");
+/* harmony import */ var _redux_actions_conditionals_changeConditionals__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../redux/actions/conditionals/changeConditionals */ "./redux/actions/conditionals/changeConditionals.ts");
+/* harmony import */ var _redux_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../redux/types */ "./redux/types/index.ts");
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -438,7 +438,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "react-redux");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _redux_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../redux/types */ "./redux/types/index.js");
+/* harmony import */ var _redux_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../redux/types */ "./redux/types/index.ts");
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -497,7 +497,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "react-redux");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _redux_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../redux/types */ "./redux/types/index.js");
+/* harmony import */ var _redux_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../redux/types */ "./redux/types/index.ts");
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -626,7 +626,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "react-redux");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _redux_actions_save_changes_SaveChangeAction__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../redux/actions/save-changes/SaveChangeAction */ "./redux/actions/save-changes/SaveChangeAction.js");
+/* harmony import */ var _redux_actions_save_changes_SaveChangeAction__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../redux/actions/save-changes/SaveChangeAction */ "./redux/actions/save-changes/SaveChangeAction.ts");
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -2595,7 +2595,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components */ "./components/index.ts");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "react-redux");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _redux_actions_user_userActions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../redux/actions/user/userActions */ "./redux/actions/user/userActions.js");
+/* harmony import */ var _redux_actions_user_userActions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../redux/actions/user/userActions */ "./redux/actions/user/userActions.ts");
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -2631,9 +2631,9 @@ const Index = () => {
 
 /***/ }),
 
-/***/ "./redux/actions/conditionals/changeConditionals.js":
+/***/ "./redux/actions/conditionals/changeConditionals.ts":
 /*!**********************************************************!*\
-  !*** ./redux/actions/conditionals/changeConditionals.js ***!
+  !*** ./redux/actions/conditionals/changeConditionals.ts ***!
   \**********************************************************/
 /*! exports provided: changeConditionsAction */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2641,23 +2641,30 @@ const Index = () => {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "changeConditionsAction", function() { return changeConditionsAction; });
-/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../types */ "./redux/types/index.js");
+/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../types */ "./redux/types/index.ts");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "axios");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 
 
 const changeConditionsAction = data => {
   return async dispatch => {
-    dispatch(changeConditionals());
+    dispatch({
+      type: _types__WEBPACK_IMPORTED_MODULE_0__["CHANGE_CONDITIONS"]
+    });
 
     try {
       console.log('Cambiando la data', data);
       await axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/api/conditions', data);
-      dispatch(changeConditionalsSuccess(data));
+      dispatch({
+        type: _types__WEBPACK_IMPORTED_MODULE_0__["CHANGE_CONDITIONS_SUCCESS"],
+        payload: data
+      });
     } catch (error) {
       console.log(error);
       console.log('Hubo un error en la accion de los condicionales');
-      dispatch(changeConditionalsError());
+      dispatch({
+        type: _types__WEBPACK_IMPORTED_MODULE_0__["CHANGE_CONDITIONS_FAILURE"]
+      });
     }
   };
 };
@@ -2677,9 +2684,9 @@ const changeConditionalsError = () => ({
 
 /***/ }),
 
-/***/ "./redux/actions/save-changes/SaveChangeAction.js":
+/***/ "./redux/actions/save-changes/SaveChangeAction.ts":
 /*!********************************************************!*\
-  !*** ./redux/actions/save-changes/SaveChangeAction.js ***!
+  !*** ./redux/actions/save-changes/SaveChangeAction.ts ***!
   \********************************************************/
 /*! exports provided: saveChangeActions */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2687,46 +2694,40 @@ const changeConditionalsError = () => ({
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "saveChangeActions", function() { return saveChangeActions; });
-/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../types */ "./redux/types/index.js");
+/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../types */ "./redux/types/index.ts");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "axios");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 
 
 const saveChangeActions = () => {
   return async (dispatch, getState) => {
-    dispatch(saveChange());
+    dispatch({
+      type: _types__WEBPACK_IMPORTED_MODULE_0__["SAVE_GLOBAL_STATE"]
+    });
 
     try {
       const user_settings = getState().user.user;
       console.log('configuraciones del usuario', user_settings);
       await axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/api/user-settings', user_settings);
-      dispatch(saveChangeSuccess(user_settings));
+      dispatch({
+        type: _types__WEBPACK_IMPORTED_MODULE_0__["SAVE_GLOBAL_STATE_SUCCESS"],
+        payload: user_settings
+      });
     } catch (error) {
       console.log(error);
       console.log('Hubo un error en la accion de Salvar estado');
-      dispatch(saveChangeFailure());
+      dispatch({
+        type: _types__WEBPACK_IMPORTED_MODULE_0__["SAVE_GLOBAL_STATE_FAILURE"]
+      });
     }
   };
 };
 
-const saveChange = () => ({
-  type: _types__WEBPACK_IMPORTED_MODULE_0__["SAVE_GLOBAL_STATE"]
-});
-
-const saveChangeSuccess = data => ({
-  type: _types__WEBPACK_IMPORTED_MODULE_0__["SAVE_GLOBAL_STATE_SUCCESS"],
-  payload: data
-});
-
-const saveChangeFailure = () => ({
-  type: _types__WEBPACK_IMPORTED_MODULE_0__["SAVE_GLOBAL_STATE_FAILURE"]
-});
-
 /***/ }),
 
-/***/ "./redux/actions/user/userActions.js":
+/***/ "./redux/actions/user/userActions.ts":
 /*!*******************************************!*\
-  !*** ./redux/actions/user/userActions.js ***!
+  !*** ./redux/actions/user/userActions.ts ***!
   \*******************************************/
 /*! exports provided: getUSerInfoAction */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2734,7 +2735,7 @@ const saveChangeFailure = () => ({
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getUSerInfoAction", function() { return getUSerInfoAction; });
-/* harmony import */ var _types___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../types/ */ "./redux/types/index.js");
+/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../types */ "./redux/types/index.ts");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "axios");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 
@@ -2742,35 +2743,29 @@ __webpack_require__.r(__webpack_exports__);
 const getUSerInfoAction = () => {
   return async dispatch => {
     try {
-      dispatch(getUserInfo());
+      dispatch({
+        type: _types__WEBPACK_IMPORTED_MODULE_0__["GET_USER_INFO"]
+      });
       const result = await axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('/api/conditions');
-      dispatch(getUserInfoSuccess(result.data.data));
+      dispatch({
+        type: _types__WEBPACK_IMPORTED_MODULE_0__["GET_USER_INFO_SUCCESS"],
+        payload: result.data.data
+      });
     } catch (error) {
       console.log(error);
       console.log('Hubo un error en la accion de obtener usuario');
-      dispatch(getUserInfoFailure());
+      dispatch({
+        type: _types__WEBPACK_IMPORTED_MODULE_0__["GET_USER_INFO_FAILURE"]
+      });
     }
   };
 };
 
-const getUserInfo = () => ({
-  type: _types___WEBPACK_IMPORTED_MODULE_0__["GET_USER_INFO"]
-});
-
-const getUserInfoSuccess = data => ({
-  type: _types___WEBPACK_IMPORTED_MODULE_0__["GET_USER_INFO_SUCCESS"],
-  payload: data
-});
-
-const getUserInfoFailure = () => ({
-  type: _types___WEBPACK_IMPORTED_MODULE_0__["GET_USER_INFO_FAILURE"]
-});
-
 /***/ }),
 
-/***/ "./redux/types/index.js":
+/***/ "./redux/types/index.ts":
 /*!******************************!*\
-  !*** ./redux/types/index.js ***!
+  !*** ./redux/types/index.ts ***!
   \******************************/
 /*! exports provided: GET_USER_INFO, GET_USER_INFO_SUCCESS, GET_USER_INFO_FAILURE, CHANGE_CONDITIONS, CHANGE_CONDITIONS_SUCCESS, CHANGE_CONDITIONS_FAILURE, SAVE_GLOBAL_STATE, SAVE_GLOBAL_STATE_SUCCESS, SAVE_GLOBAL_STATE_FAILURE, CHANGE_SHOP_NAME, CHANGE_AMMOUNT, CHANGE_CLIENT_GLOBALID */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2810,7 +2805,7 @@ const CHANGE_CLIENT_GLOBALID = 'CHANGE_CLIENT_GLOBALID';
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!*******************************!*\
   !*** multi ./pages/index.tsx ***!
   \*******************************/

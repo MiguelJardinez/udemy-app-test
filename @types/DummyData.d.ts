@@ -15,3 +15,17 @@ interface DummyTable {
   verification: string;
   status: string;
 }
+
+interface ITDummyDataApi {
+  uuid: string,
+  global_client_id: string,
+  shop_name: string,
+  photo_url: string,
+  limit_ammount: Number,
+  settings: ITDummySettings
+}
+
+interface ITDummySettings {
+  address: boolean,
+  ammount: boolean,
+}

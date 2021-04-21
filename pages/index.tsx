@@ -3,10 +3,11 @@ import MainLayout from '../Layout/MainLayout';
 import {ConditionsGlobalId, ConnectGlobalId, HeaderTitle, ShopInfo, SaveChanges} from '../components';
 import {useDispatch, useSelector} from 'react-redux';
 import {getUSerInfoAction} from '../redux/actions/user/userActions';
+import {appState} from '../redux/reducer';
 
 const Index = () => {
   const dispatch = useDispatch();
-  const userState = useSelector((state: any) => state.user);
+  const userState = useSelector((state: appState) => state.user);
 
   useEffect(() => {
     console.log('Vamos a obtener los datos del usuario desde el api');
