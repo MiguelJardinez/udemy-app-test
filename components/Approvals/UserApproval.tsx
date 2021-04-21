@@ -17,8 +17,10 @@ const UserApproval: React.FC<PropsUserData> = (props) => {
             <h1 className="text-4xl text-gray-500 font-bold">{name}</h1>
             <h4>{verified}</h4>
           </div>
-          <div className="cursor-pointer">
-            <h1 onClick={() => setShowContent(!showContent)}>{showContent ? 'Hide' : 'Show'}</h1>
+          <div 
+              onClick={() => setShowContent(!showContent)} 
+              className="cursor-pointer h-10 w-10 justify-center items-center">
+            <i className={`fas fa-chevron-${showContent ? 'up' : 'down'} text-2xl`} />
           </div>
         </div>
         <div className={`transition-all transform origin-bottom ${showContent ? '' : ''}`}>

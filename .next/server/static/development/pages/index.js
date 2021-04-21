@@ -209,10 +209,11 @@ const UserApproval = props => {
   }, __jsx("div", null, __jsx("h1", {
     className: "text-4xl text-gray-500 font-bold"
   }, name), __jsx("h4", null, verified)), __jsx("div", {
-    className: "cursor-pointer"
-  }, __jsx("h1", {
-    onClick: () => setShowContent(!showContent)
-  }, showContent ? 'Hide' : 'Show'))), __jsx("div", {
+    onClick: () => setShowContent(!showContent),
+    className: "cursor-pointer h-10 w-10 justify-center items-center"
+  }, __jsx("i", {
+    className: `fas fa-chevron-${showContent ? 'up' : 'down'} text-2xl`
+  }))), __jsx("div", {
     className: `transition-all transform origin-bottom ${showContent ? '' : ''}`
   }, __jsx("div", {
     className: "flex justify-between mb-10"

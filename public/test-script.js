@@ -26,7 +26,7 @@ function handler() {
   console.log('Funcionando el script');
   console.log(Shopify)
 
-  fetch(`https://cors-anywhere.herokuapp.com/https://59be870fec72.ngrok.io/api/conditions?shop=${shop}`)
+  fetch(`https://cors-anywhere.herokuapp.com/https://d3bdd9b41916.ngrok.io/api/conditions?shop=${shop}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data.data);

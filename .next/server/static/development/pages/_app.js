@@ -472,13 +472,19 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
     const {
       Component,
       pageProps
-    } = this.props;
+    } = this.props; // const config = { apiKey: API_KEY, shopOrigin: Cookies.get('shopOrigin'), forceRedirect: true }
+
     const config = {
       apiKey: "6b3c4f6c7afb94f6035708373b795e8c",
       shopOrigin: js_cookie__WEBPACK_IMPORTED_MODULE_7___default.a.get('shopOrigin'),
       forceRedirect: true
     };
-    return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, null, __jsx("title", null, "Sample App"), __jsx("meta", {
+    return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, null, __jsx("title", null, "GlobalID App"), __jsx("link", {
+      rel: "stylesheet",
+      href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css",
+      integrity: "sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==",
+      crossorigin: "anonymous"
+    }), __jsx("meta", {
       charSet: "utf-8"
     })), __jsx(react_redux__WEBPACK_IMPORTED_MODULE_11__["Provider"], {
       store: _redux_store__WEBPACK_IMPORTED_MODULE_12__["default"]
